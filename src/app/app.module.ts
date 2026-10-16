@@ -6,10 +6,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular/lazy';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FirebaseModule } from './firebase.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FirebaseModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
